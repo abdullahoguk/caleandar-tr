@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Caleandar tr demo with multi events</title>
+	<link rel="stylesheet" href="takvim.css" />
+
+</head>
+
+<body>
+	<div id="etkinlikTakvimi"></div>
+
+</body>
+<script type="text/javascript" src="takvim.js"></script>
+<script>
+	var events = [
+		{ 'Date': new Date(2021, 2, 30), 'Title': 'Eğitim' },
+		{ 'Date': new Date(2021, 2, 29), 'Title': 'Konferans' },
+		{ 'Date': new Date(2021, 3, 07), 'Title': 'İşletme toplantısı', 'Link': 'https://toplanti.com' },
+		{ 'Date': new Date(2021, 3, 27), 'Title': '35 year anniversary', 'Link': 'https://www.35.com.tr' },
+		{ 'Date': new Date(2021, 3, 27), 'Title': '45 yıldönümü', 'Link': 'https://www.45.com.tr/'},
+		{ 'Date': new Date(2021, 3, 27), 'Title': '55 year anniversary', 'Link': 'https://www.55.com.tr' }
+	];
+	var settings = {};
+	var element = document.getElementById('etkinlikTakvimi');
+	caleandar(element, events, settings);
+</script>
+
+</html>
